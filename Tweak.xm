@@ -27,7 +27,7 @@
     UITextField *searchField = _searchHeader.searchField;
     
     NSString *searchString = [searchField.text lowercaseString];
-    if ([searchString hasPrefix:@""]) {
+    if ([searchString hasPrefix:@"Siri"]) {
         NSString *searchStringWithoutSiri = [searchString
                                          stringByReplacingOccurrencesOfString:@"siri" withString:@""];
         if (![[searchStringWithoutSiri stringByReplacingOccurrencesOfString:@" " withString:@""] isEqual:@""]) {
